@@ -2,3 +2,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    right: 20px;
+    top: 45px;
+  }
+  
+  .bm-burger-bars {
+    background: white;
+  }
+  
+  .bm-menu {
+    background: black;
+    padding: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  .bm-item-list {
+
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-right: 0;
+  }
+  
+  .bm-item {
+    display: inline-block;
+    margin: 1rem 0;
+    color: white;
+    transition: color 0.2s;
+  }
+  
+  /* .bm-item:hover, .bm-item:focus {
+    color: ;
+  }
+   */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    
+  }
+   
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #000;
+    
+  }
