@@ -7,7 +7,7 @@ export default function home() {
   return (
     <>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
-        <header className="lg:hidden">
+        <header className="lg:hidden sticky">
           <Header />
         </header>
         <div className="lg:w-3/4 grid gap-8 my-2 justify-center align-middle lg:grid-cols-2 lg:place-content-center lg:place-items-center lg:gap-16">
