@@ -39,8 +39,8 @@ export default function personal({
           </section>
 
           <div className="mx-10 lg:hidden">
-            {images.map((image) => (
-              <div>
+            {images.map((image, i) => (
+              <div key={i}>
                 <img src={urlFor(image)}></img>
               </div>
             ))}

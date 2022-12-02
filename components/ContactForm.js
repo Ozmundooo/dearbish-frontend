@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function () {
+export default function ContactForm() {
   return (
     <div className="lg:justify-center lg:align-middle lg:flex ">
       <form

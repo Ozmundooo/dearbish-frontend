@@ -33,8 +33,8 @@ export default function cd({ title, mainImage, subtext, images, description }) {
           </section>
 
           <div className="mx-10 lg:hidden">
-            {images.map((image) => (
-              <div>
+            {images.map((image, i) => (
+              <div key={i}>
                 <img src={urlFor(image)}></img>
               </div>
             ))}
@@ -50,7 +50,7 @@ export default function cd({ title, mainImage, subtext, images, description }) {
 
                   <div className="h-[220px] w-[220px] bg-black"></div>
                 </>
-              ))}{" "}
+              ))}
             </div>
           </div>
         </div>
