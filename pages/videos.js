@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import Image from "next/image";
-const personal = ({ personals }) => {
+const video = ({ videos }) => {
   return (
     <>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
@@ -13,13 +13,13 @@ const personal = ({ personals }) => {
         <div className="lg:w-3/4 ">
           <div className=" ">
             <div className="my-14 grid lg:grid-cols-1 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
-              {personals.map((personal) => (
+              {videos.map((video) => (
                 <>
                   <div className="flex flex-col lg:flex-row mt-8">
                     <iframe
                       width="540"
-                      height="0300"
-                      src="https://www.youtube.com/embed/V_v2NveDgFw"
+                      height="300"
+                      src={video.video}
                       title="YouTube video player"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,9 +28,9 @@ const personal = ({ personals }) => {
 
                     <div className="w-full md:w-2/3 md:pl-4 flex flex-col flex-grow  md:mt-0">
                       <h2 className="font-bold text-2xl mt-auto">
-                        {personal.title}
+                        {video.title}
                       </h2>
-                      <div>{personal.description}</div>
+                      <div>{video.description}</div>
                     </div>
                   </div>
                 </>
@@ -47,28 +47,27 @@ const personal = ({ personals }) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = `*[ _type == "personal"] | order(title){
+  const query = `*[ _type == "video"] | order(title){
         _id,
         title,
         description,
-        mainImage,
-        images,
+        video,
         slug
     }`;
-  const personals = await sanityClient.fetch(query);
+  const videos = await sanityClient.fetch(query);
 
-  if (!personals.length) {
+  if (!videos.length) {
     return {
       props: {
-        personals: [],
+        videos: [],
       },
     };
   } else
     return {
       props: {
-        personals,
+        videos,
       },
     };
 };
 
-export default personal;
+export default video;
