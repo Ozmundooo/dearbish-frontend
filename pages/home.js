@@ -18,21 +18,21 @@ export default function home() {
               </h2>
             </div>
           </Link>
-          <Link href="/personal">
+          <Link href="/editorials">
             <div className="bg-white grid place-items-center w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] text-center">
               <h2 className="text-xl font-semibold font-['Poppins']">
                 Editorials
               </h2>
             </div>
           </Link>
-          <Link href="/personal">
+          <Link href="/videos">
             <div className="bg-white grid place-items-center w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] text-center">
               <h2 className="text-xl font-semibold  font-['Poppins']">
                 Videos
               </h2>
             </div>
           </Link>
-          <Link href="/personal">
+          <Link href="/cd">
             <div className="bg-white grid place-items-center w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] text-center">
               <h2 className="text-xl font-semibold font-['Poppins']">
                 Creative Direction

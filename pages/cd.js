@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import Image from "next/image";
-const personal = ({ personals }) => {
+const personal = ({ cds }) => {
   return (
     <>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
@@ -13,25 +13,22 @@ const personal = ({ personals }) => {
         <div className="lg:w-3/4 ">
           <div className=" ">
             <div className="my-14 grid lg:grid-cols-2 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
-              {personals.map((personal) => (
+              {cds.map((cd) => (
                 <>
-                  <Link
-                    key={personal.id}
-                    href={`personal/${personal.slug.current}`}
-                  >
+                  <Link key={cd.id} href={`cd/${cd.slug.current}`}>
                     <div className="flex flex-col lg:flex-row">
                       <img
                         className="lg:h-[300px] h-[305px]"
-                        src={urlFor(personal.mainImage)}
+                        src={urlFor(cd.mainImage)}
                       />
                       <div className="w-full md:w-2/3 md:pl-4 h-auto flex flex-col flex-grow mt-1 md:mt-0">
                         <h2 className="font-bold text-2xl mt-auto">
-                          {personal.title}
+                          {cd.title}
                         </h2>
                         <div
                           className=" lg:line-clamp-1 lg:w-64 line-clamp-1 "
                           dangerouslySetInnerHTML={{
-                            __html: personal.description,
+                            __html: cd.description,
                           }}
                         ></div>
                       </div>
@@ -51,7 +48,7 @@ const personal = ({ personals }) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = `*[ _type == "personal"] | order(title){
+  const query = `*[ _type == "creativedirection"] | order(title){
         _id,
         title,
         description,
@@ -59,18 +56,18 @@ export const getServerSideProps = async () => {
         images,
         slug
     }`;
-  const personals = await sanityClient.fetch(query);
+  const cds = await sanityClient.fetch(query);
 
-  if (!personals.length) {
+  if (!cds.length) {
     return {
       props: {
-        personals: [],
+        cds: [],
       },
     };
   } else
     return {
       props: {
-        personals,
+        cds,
       },
     };
 };

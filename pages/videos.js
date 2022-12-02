@@ -12,31 +12,27 @@ const personal = ({ personals }) => {
         </header>
         <div className="lg:w-3/4 ">
           <div className=" ">
-            <div className="my-14 grid lg:grid-cols-2 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
+            <div className="my-14 grid lg:grid-cols-1 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
               {personals.map((personal) => (
                 <>
-                  <Link
-                    key={personal.id}
-                    href={`personal/${personal.slug.current}`}
-                  >
-                    <div className="flex flex-col lg:flex-row">
-                      <img
-                        className="lg:h-[300px] h-[305px]"
-                        src={urlFor(personal.mainImage)}
-                      />
-                      <div className="w-full md:w-2/3 md:pl-4 h-auto flex flex-col flex-grow mt-1 md:mt-0">
-                        <h2 className="font-bold text-2xl mt-auto">
-                          {personal.title}
-                        </h2>
-                        <div
-                          className=" lg:line-clamp-1 lg:w-64 line-clamp-1 "
-                          dangerouslySetInnerHTML={{
-                            __html: personal.description,
-                          }}
-                        ></div>
-                      </div>
+                  <div className="flex flex-col lg:flex-row mt-8">
+                    <iframe
+                      width="540"
+                      height="0300"
+                      src="https://www.youtube.com/embed/V_v2NveDgFw"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+
+                    <div className="w-full md:w-2/3 md:pl-4 flex flex-col flex-grow  md:mt-0">
+                      <h2 className="font-bold text-2xl mt-auto">
+                        {personal.title}
+                      </h2>
+                      <div>{personal.description}</div>
                     </div>
-                  </Link>
+                  </div>
                 </>
               ))}
             </div>

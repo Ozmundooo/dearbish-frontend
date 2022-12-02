@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/LogoDB.png";
 import Image from "next/image";
 import Link from "next/link";
-import Sidebar from "./Sidebar/Sidebar";
+import Sidebar from "./Sidebar";
 export default function Header() {
   /*
   TODO:
@@ -23,12 +23,24 @@ export default function Header() {
           <Link href="/personal">
             <h2>Personal</h2>
           </Link>
-          <h2>Editorials</h2>
-          <h2>Videos</h2>
-          <h2>Creative Direction</h2>
-          <h2>CV</h2>
-          <h2>About</h2>
-          <h2>Contact</h2>
+          <Link href="/editorials">
+            <h2>Editorials</h2>
+          </Link>
+          <Link href="/videos">
+            <h2>Videos</h2>
+          </Link>
+          <Link href="/cd">
+            <h2>Creative Direction</h2>
+          </Link>
+          <Link href="/cv">
+            <h2>CV</h2>
+          </Link>
+          <Link href="/about">
+            <h2>About</h2>
+          </Link>
+          <Link href="/contact">
+            <h2>Contact</h2>
+          </Link>
         </div>
       </div>
     </>
