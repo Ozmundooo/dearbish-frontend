@@ -33,10 +33,9 @@ export default function personal({ title, mainImage, images }) {
             <div className="grid grid-cols-3 gap-8">
               {images.map((image) => (
                 <>
-                  <img
-                    className="h-[400px] w-[400px]"
-                    src={urlFor(image)}
-                  ></img>
+                  <div className="h-[400px] w-[400px] m-1">
+                    <img src={urlFor(image)}></img>
+                  </div>
                 </>
               ))}
             </div>
