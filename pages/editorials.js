@@ -19,6 +19,9 @@ const personal = ({ editorials }) => {
                     key={editorial.id}
                     href={`editorial/${editorial.slug.current}`}
                   >
+                    <h2 className="font-bold lg:text-lg text-md lg:mb-5 mb-2">
+                      {editorial.title}
+                    </h2>
                     <div className="flex flex-col lg:flex-row lg:w-3/4">
                       <img className="" src={urlFor(editorial.mainImage)} />
                     </div>

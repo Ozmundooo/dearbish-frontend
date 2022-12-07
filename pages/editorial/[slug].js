@@ -4,13 +4,7 @@ import { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 
-export default function personal({
-  title,
-  mainImage,
-  subtext,
-  images,
-  description,
-}) {
+export default function personal({ title, mainImage, images }) {
   return (
     <>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
@@ -24,18 +18,6 @@ export default function personal({
                 <h2 className="font-bold lg:text-2xl text-lg lg:mb-5 mb-2">
                   {title}
                 </h2>
-                <div className="flex lg:gap-12 md:gap-10 gap-6 ">
-                  <img
-                    className="lg:h-[400px] h-[300px] w-full md:w-auto"
-                    src={urlFor(mainImage)}
-                  />
-                </div>
-                <p className="font-light lg:my-4 mt-3">{subtext}</p>
-                <div className="flex flex-col justify-evenly">
-                  <h2 className="lg:text-xl my-1 lg:mr-4 mr-2">
-                    {description}
-                  </h2>
-                </div>
               </div>
             </div>
           </section>
@@ -48,17 +30,15 @@ export default function personal({
             ))}
           </div>
           <div className="flex justify-center mx-auto">
-            <div className="grid grid-cols-5 w-[900px]">
+            <div className="grid grid-cols-3 gap-8">
               {images.map((image) => (
                 <>
                   <img
-                    className="h-[220px] w-[220px]"
+                    className="h-[400px] w-[400px]"
                     src={urlFor(image)}
                   ></img>
-
-                  <div className="h-[220px] w-[220px] bg-black"></div>
                 </>
-              ))}{" "}
+              ))}
             </div>
           </div>
         </div>
@@ -74,18 +54,16 @@ export default function personal({
 export const getServerSideProps = async (pageContext) => {
   const pageSlug = pageContext.query.slug;
 
-  const query = `*[ _type == "personal" && slug.current == $pageSlug][0]{
+  const query = `*[ _type == "editorial" && slug.current == $pageSlug][0]{
     title,
         mainImage,
         images,
         mainImage,
-        subtext,
-        description,
       }`;
 
-  const personal = await sanityClient.fetch(query, { pageSlug });
+  const editorial = await sanityClient.fetch(query, { pageSlug });
 
-  if (!personal) {
+  if (!editorial) {
     return {
       props: null,
       notFound: true,
@@ -93,11 +71,9 @@ export const getServerSideProps = async (pageContext) => {
   } else {
     return {
       props: {
-        title: personal.title,
-        subtext: personal.subtext,
-        mainImage: personal.mainImage,
-        images: personal.images,
-        description: personal.description,
+        title: editorial.title,
+        mainImage: editorial.mainImage,
+        images: editorial.images,
       },
     };
   }
