@@ -3,7 +3,7 @@ import { sanityClient, urlFor } from "../../sanity";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
+import "react-image-lightbox/style.css";
 
 export default function Editorial({ title, images }) {
   const arrImages = [];
