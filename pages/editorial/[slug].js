@@ -50,9 +50,9 @@ export default function editorial({ title, images }) {
             <div className="grid grid-cols-2 gap-8 ">
               {arrImages.map((image, i) => (
                 <>
-                  <div className="h-[400px] w-[600px] m-1 place-items-center">
+                  <div className="h-[400px] w-[600px] m-1 ">
                     <img
-                      className="h-[400px]"
+                      className="h-[400px] mx-auto"
                       src={image}
                       onClick={() => imageSelect(i)}
                     />
