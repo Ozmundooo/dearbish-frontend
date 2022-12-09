@@ -52,7 +52,7 @@ export default function editorial({ title, images }) {
                 <>
                   <div className="h-[400px] w-[600px] m-1 ">
                     <img
-                      className="h-[400px] mx-auto"
+                      className="h-[400px] mx-auto cursor"
                       src={image}
                       onClick={() => imageSelect(i)}
                     />
