@@ -1,17 +1,34 @@
 import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 
-export default function personal({ title, mainImage, images }) {
+export default function editorial({ title, images }) {
+  const arrImages = [];
+  for (var i = 0; i < images.length; i++) {
+    arrImages.push(urlFor(images[i]));
+  }
+
+  const [isOpen, setIsOpen] = useState(0);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [key, setKey] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setKey(key + 1));
+  }, [isOpen]);
+  function imageSelect(index) {
+    console.log(arrImages[index]);
+    setPhotoIndex(index);
+    setIsOpen(1);
+  }
   return (
     <>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />
         </header>
-        <div className="lg:w-3/4 overflow-y-scroll">
+        <div className="lg:w-3/4  ">
           <section className="my-10 flex flex-col gap-8 text-white font-['Poppins'] ">
             <div>
               <div className="flex flex-col ml-10 ">
@@ -23,25 +40,35 @@ export default function personal({ title, mainImage, images }) {
           </section>
 
           <div className="mx-10 lg:hidden">
-            {images.map((image, i) => (
+            {arrImages.map((image, i) => (
               <div key={i}>
-                <img src={urlFor(image)}></img>
+                <img src={image}></img>
               </div>
             ))}
           </div>
           <div className="flex justify-center mx-auto">
-            <div className="grid grid-cols-3 gap-8">
-              {images.map((image) => (
+            <div className="grid grid-cols-2 gap-8 ">
+              {arrImages.map((image, i) => (
                 <>
-                  <div className="h-[400px] w-[400px] m-1">
-                    <img src={urlFor(image)}></img>
+                  <div className="h-[400px] w-[600px] m-1 place-items-center">
+                    <img
+                      className="h-[400px]"
+                      src={image}
+                      onClick={() => imageSelect(i)}
+                    />
                   </div>
                 </>
               ))}
             </div>
           </div>
         </div>
-
+        {isOpen && (
+          <Lightbox
+            key={key}
+            mainSrc={urlFor(images[photoIndex])}
+            onCloseRequest={() => setIsOpen(0)}
+          />
+        )}
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
           <Header />
         </aside>

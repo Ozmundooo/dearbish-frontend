@@ -17,7 +17,6 @@
     "react-burger-menu": "^3.0.8",
     "react-dom": "18.2.0",
     "react-image-lightbox": "^5.1.4",
-    "react-spring-lightbox": "^1.7.1",
     "tailwind-scrollbar": "^2.0.1"
   },
   "devDependencies": {
