@@ -5,7 +5,7 @@ import Image from "next/image";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 
-export default function editorial({ title, images }) {
+export default function Editorial({ title, images }) {
   const arrImages = [];
   for (var i = 0; i < images.length; i++) {
     arrImages.push(urlFor(images[i]));
