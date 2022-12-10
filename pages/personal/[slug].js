@@ -40,26 +40,12 @@ export default function personal({
             </div>
           </section>
 
-          <div className="mx-10 lg:hidden">
+          <div className="mx-10 ">
             {images.map((image, i) => (
               <div key={i}>
                 <img src={urlFor(image)}></img>
               </div>
             ))}
-          </div>
-          <div className="flex justify-center mx-auto">
-            <div className="grid grid-cols-5 w-[900px]">
-              {images.map((image) => (
-                <>
-                  <img
-                    className="h-[220px] w-[220px]"
-                    src={urlFor(image)}
-                  ></img>
-
-                  <div className="h-[220px] w-[220px] bg-black"></div>
-                </>
-              ))}{" "}
-            </div>
           </div>
         </div>
 
