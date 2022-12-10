@@ -23,7 +23,10 @@ const personal = ({ editorials }) => {
                       {editorial.title}
                     </h2>
                     <div className="flex flex-col lg:flex-row lg:w-3/4">
-                      <img className="" src={urlFor(editorial.mainImage)} />
+                      <img
+                        className="lg:h-[500px] lg:object-cover"
+                        src={urlFor(editorial.mainImage)}
+                      />
                     </div>
                   </Link>
                 </>
