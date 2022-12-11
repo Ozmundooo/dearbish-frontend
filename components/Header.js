@@ -16,7 +16,7 @@ export default function Header() {
         <Sidebar />
       </div>
 
-      <div className="lg:px-32 lg:py-12 p-4 py-6 lg:flex-col lg:flex bg-black text-white lg:border-l-4 lg:h-screen font-['Poppins'] lg:sticky lg:right-0">
+      <div className="lg:px-32 lg:py-12 p-4 py-6 lg:flex-col lg:flex bg-black text-white  lg:h-screen font-['Poppins'] lg:sticky lg:right-0">
         <Image className="lg:ml-12 lg:my-8 w-[150px] lg:w-full" src={Logo} />
 
         <div className="lg:flex lg:flex-col text-xl gap-6 font-semibold text-right lg:my-10 hidden">
