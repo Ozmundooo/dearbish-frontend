@@ -39,14 +39,14 @@ export default function Editorial({ title, images }) {
             </div>
           </section>
 
-          <div className="mx-10 lg:hidden">
+          <div className="mx-10 flex flex-col gap-8 lg:hidden">
             {arrImages.map((image, i) => (
               <div key={i}>
                 <img src={image}></img>
               </div>
             ))}
           </div>
-          <div className="flex justify-center mx-auto">
+          <div className="lg:flex lg:justify-center lg:mx-auto hidden">
             <div className="grid grid-cols-2 gap-8 ">
               {arrImages.map((image, i) => (
                 <>

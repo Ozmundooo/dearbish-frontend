@@ -40,7 +40,7 @@ export default function personal({
             </div>
           </section>
 
-          <div className="mx-10 ">
+          <div className="mx-10 flex flex-col gap-8">
             {images.map((image, i) => (
               <div key={i}>
                 <img src={urlFor(image)}></img>
