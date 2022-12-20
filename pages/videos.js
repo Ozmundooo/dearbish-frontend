@@ -47,7 +47,7 @@ const video = ({ videos }) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = `*[ _type == "video"] | order(title){
+  const query = `*[ _type == "video"] | order(order){
         _id,
         title,
         description,

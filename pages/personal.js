@@ -21,7 +21,7 @@ const personal = ({ personals }) => {
                   >
                     <div className="flex flex-col lg:flex-row">
                       <img
-                        className="lg:h-[405px] h-[305px]"
+                        className="lg:h-[405px] h-[305px] "
                         src={urlFor(personal.mainImage)}
                       />
                       <div className="w-full md:w-2/3 md:pl-4 h-auto flex flex-col flex-grow mt-1 md:mt-0">
@@ -51,7 +51,7 @@ const personal = ({ personals }) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = `*[ _type == "personal"] | order(title){
+  const query = `*[ _type == "personal"] | order(order){
         _id,
         title,
         description,

@@ -48,7 +48,7 @@ const personal = ({ cds }) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = `*[ _type == "creativedirection"] | order(title){
+  const query = `*[ _type == "creativedirection"] | order(order){
         _id,
         title,
         description,

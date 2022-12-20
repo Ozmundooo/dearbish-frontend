@@ -43,7 +43,7 @@ const personal = ({ editorials }) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = `*[ _type == "editorial"] | order(title){
+  const query = `*[ _type == "editorial"] | order(order){
         _id,
         title,
         mainImage,
