@@ -10,7 +10,7 @@ const personal = ({ editorials }) => {
         <header className="lg:hidden">
           <Header />
         </header>
-        <div className="lg:w-3/4 ">
+        <div className="lg:w-3/4 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-black">
           <div className=" ">
             <div className="my-14 grid lg:grid-cols-3 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
               {editorials.map((editorial) => (
@@ -19,7 +19,7 @@ const personal = ({ editorials }) => {
                     key={editorial.id}
                     href={`editorial/${editorial.slug.current}`}
                   >
-                    <h2 className="font-bold lg:text-lg text-md lg:mb-5 mb-2">
+                    <h2 className="font-bold lg:text-lg text-md lg:mb-5 mb-2 lg:mt-2">
                       {editorial.title}
                     </h2>
                     <div className="flex flex-col lg:flex-row lg:w-3/4">

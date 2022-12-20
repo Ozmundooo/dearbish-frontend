@@ -2,14 +2,14 @@ import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { useState } from "react";
 
-export default function cd({ title, mainImage, subtext, images, description }) {
+export default function cd({ title, mainImage, images, description }) {
   return (
     <>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />
         </header>
-        <div className="lg:w-3/4 overflow-y-scroll">
+        <div className="lg:w-3/4 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-black">
           <section className="my-10 flex flex-col gap-8 text-white font-['Poppins'] ">
             <div>
               <div className="flex flex-col ml-10 ">
@@ -22,7 +22,6 @@ export default function cd({ title, mainImage, subtext, images, description }) {
                     src={urlFor(mainImage)}
                   />
                 </div>
-                <p className="font-light lg:my-4 mt-3">{subtext}</p>
                 <div className="flex flex-col justify-evenly">
                   <h2 className="lg:text-xl my-1 lg:mr-4 mr-2">
                     {description}
@@ -57,7 +56,6 @@ export const getServerSideProps = async (pageContext) => {
         mainImage,
         images,
         mainImage,
-        subtext,
         description,
       }`;
 
@@ -72,7 +70,6 @@ export const getServerSideProps = async (pageContext) => {
     return {
       props: {
         title: personal.title,
-        subtext: personal.subtext,
         mainImage: personal.mainImage,
         images: personal.images,
         description: personal.description,

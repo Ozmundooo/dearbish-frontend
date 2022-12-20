@@ -19,16 +19,7 @@ const about = ({}) => {
           </h2>
           <div className="flex flex-col justify-evenly">
             <h2 className="lg:text-xl my-1 lg:mx-44">
-              {`It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like)`}
+              {`Bish Uprety is a creative director and photographer based in Toronto. Being an immigrant and having a different perspective on the everyday, he has cultivated his own sense of style through his art. Bish has always had a keen sense for authenticity and makes his subjects feel comfortable enough to be themselves in front of the camera. Bish has also delved into deeper and more introspective topics through his personal work. He’s not afraid to share his emotions to the world.`}
             </h2>
           </div>
         </div>

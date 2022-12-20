@@ -10,7 +10,7 @@ const video = ({ videos }) => {
         <header className="lg:hidden">
           <Header />
         </header>
-        <div className="lg:w-3/4 ">
+        <div className="lg:w-3/4 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-black">
           <div className=" ">
             <div className="my-14 grid lg:grid-cols-1 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
               {videos.map((video) => (

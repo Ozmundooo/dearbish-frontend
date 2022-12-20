@@ -17,9 +17,9 @@ function Sidebar() {
         <Link href="/cd" className="font-['Poppins'] font-bold text-lg">
           Creative Diredction
         </Link>
-        <Link href="/cv" className="font-['Poppins'] font-bold text-lg">
+        {/* <Link href="/cv" className="font-['Poppins'] font-bold text-lg">
           CV
-        </Link>
+        </Link> */}
         <Link href="/about" className="font-['Poppins'] font-bold text-lg">
           About
         </Link>

@@ -28,7 +28,7 @@ export default function Editorial({ title, images }) {
         <header className="lg:hidden">
           <Header />
         </header>
-        <div className="lg:w-3/4  ">
+        <div className="lg:w-3/4  overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-black">
           <section className="my-10 flex flex-col gap-8 text-white font-['Poppins'] ">
             <div>
               <div className="flex flex-col ml-10 ">
