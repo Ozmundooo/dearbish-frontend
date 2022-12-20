@@ -10,9 +10,9 @@ export default function home() {
         <header className="lg:hidden sticky">
           <Header />
         </header>
-        <div className="lg:w-3/4 grid gap-8 my-2 justify-center align-middle lg:grid-cols-2 lg:place-content-center lg:place-items-center lg:gap-16 animate-in slide-in-from-top delay-10000">
+        <div className="lg:w-3/4 grid gap-4 my-2 justify-center align-middle lg:grid-cols-2 lg:place-content-center lg:place-items-center lg:gap-16 animate-in slide-in-from-top delay-10000">
           <Link href="/personal">
-            <div class="relative w-[300px] h-[300px] lg:w-[300px] lg:h-[300px]  group hover:scale-110 transition ease-in-out  ">
+            <div class="relative w-[300px] h-[300px] xl:w-[400px] xl:h-[400px]  group hover:scale-110 transition ease-in-out  ">
               <img
                 src="./persThumb.jpg"
                 className="h-full opacity-70 group-hover:opacity-100"
@@ -23,7 +23,7 @@ export default function home() {
             </div>
           </Link>
           <Link href="/editorials">
-            <div class="relative w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] group hover:scale-110 transition ease-in-out ">
+            <div class="relative w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] group hover:scale-110 transition ease-in-out ">
               <img
                 src="./editThumb.jpg"
                 className="h-full opacity-70 group-hover:opacity-100"
@@ -34,7 +34,7 @@ export default function home() {
             </div>
           </Link>
           <Link href="/videos">
-            <div class="relative w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] group hover:scale-110 transition ease-in-out ">
+            <div class="relative w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] group hover:scale-110 transition ease-in-out ">
               <img
                 src="./vidThumb.jpg"
                 className="h-full opacity-70 group-hover:opacity-100"
@@ -45,7 +45,7 @@ export default function home() {
             </div>
           </Link>
           <Link href="/cd">
-            <div class="relative w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] group hover:scale-110 transition ease-in-out ">
+            <div class="relative w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] group hover:scale-110 transition ease-in-out ">
               <img
                 src="./cdThumb.jpg"
                 className="h-full opacity-70 group-hover:opacity-100"
