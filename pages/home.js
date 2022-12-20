@@ -10,9 +10,9 @@ export default function home() {
         <header className="lg:hidden sticky">
           <Header />
         </header>
-        <div className="lg:w-3/4 grid gap-8 my-2 justify-center align-middle lg:grid-cols-2 lg:place-content-center lg:place-items-center lg:gap-16">
+        <div className="lg:w-3/4 grid gap-8 my-2 justify-center align-middle lg:grid-cols-2 lg:place-content-center lg:place-items-center lg:gap-16 animate-in fade-in delay-10000">
           <Link href="/personal">
-            <div class="relative w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] group hover:scale-110 transition ease-in-out ">
+            <div class="relative w-[150px] h-[150px] lg:w-[300px] lg:h-[300px]  group hover:scale-110 transition ease-in-out  ">
               <img
                 src="./persThumb.jpg"
                 className="h-full opacity-70 group-hover:opacity-100"
