@@ -47,8 +47,12 @@ export default function Header() {
             <h2>Contact</h2>
           </Link>
           <div className="lg:flex place-content-end gap-5">
-            <Image className="lg:w-[30px] lg:h-[30px]" src={IG} />
-            <Image className="lg:w-[30px] lg:h-[30px]" src={Email} />
+            <Link href="https://www.instagram.com/dearbish">
+              <Image className="lg:w-[30px] lg:h-[30px]" src={IG} />
+            </Link>
+            <a href="mailto:dearbishhh@gmail.com">
+              <Image className="lg:w-[30px] lg:h-[30px]" src={Email} />
+            </a>
           </div>
         </div>
       </div>
