@@ -17,7 +17,7 @@ const personal = ({ cds }) => {
         </header>
         <div className="lg:w-3/4 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-black">
           <div className=" ">
-            <div className="my-14 grid lg:grid-cols-2 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
+            <div className="my-14 grid xl:grid-cols-2 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
               {cds.map((cd) => (
                 <>
                   <Link key={cd.id} href={`cd/${cd.slug.current}`}>

@@ -11,7 +11,7 @@ export default function home() {
         <title>Dearbish</title>
       </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
-        <header className="lg:hidden">
+        <header className="lg:hidden ">
           <Header />
         </header>
         <div className="lg:w-3/4 flex place-content-center place-items-center">
