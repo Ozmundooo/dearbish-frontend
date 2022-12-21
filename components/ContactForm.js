@@ -8,6 +8,8 @@ export default function ContactForm() {
         action="https://formsubmit.co/09c7994bc2115a974dd6edeba1ac47f4"
         method="POST"
       >
+        <input type="hidden" name="_captcha" value="false"></input>
+        <input type="hidden" name="_next" value="www.dearbish.com/home"></input>
         <h2 className="lg:text-5xl text-3xl text-white text text-center mb-10 font-bold">
           Contact
         </h2>
