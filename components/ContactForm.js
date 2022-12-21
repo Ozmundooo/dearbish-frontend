@@ -9,7 +9,7 @@ export default function ContactForm() {
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false"></input>
-        <input type="hidden" name="_next" value="www.dearbish.com/home"></input>
+        <input type="hidden" name="_next" value="/home"></input>
         <h2 className="lg:text-5xl text-3xl text-white text text-center mb-10 font-bold">
           Contact
         </h2>
