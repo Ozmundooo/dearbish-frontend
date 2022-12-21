@@ -50,7 +50,7 @@ export default function Header() {
             <Link href="https://www.instagram.com/dearbish">
               <Image className="lg:w-[30px] lg:h-[30px]" src={IG} />
             </Link>
-            <a href="mailto:dearbishhh@gmail.com">
+            <a href="mailto:info@dearbish.com">
               <Image className="lg:w-[30px] lg:h-[30px]" src={Email} />
             </a>
           </div>

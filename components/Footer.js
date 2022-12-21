@@ -11,7 +11,7 @@ export default function Footer() {
         <Link href="https://www.instagram.com/dearbish">
           <Image className="w-[30px] h-[30px]" src={IG} />
         </Link>
-        <a href="mailto:dearbishhh@gmail.com">
+        <a href="mailto:info@dearbish.com">
           <Image className="w-[30px] h-[30px]" src={Email} />
         </a>
       </div>
