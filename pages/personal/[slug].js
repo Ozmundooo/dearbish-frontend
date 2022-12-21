@@ -20,7 +20,9 @@ export default function personal({ title, mainImage, images, description }) {
                 </h2>
                 <div className="lg:flex lg:gap-12 md:gap-10 gap-6  ">
                   <div className="flex flex-col flex-grow justify-end">
-                    <h2 className="lg:text-xl  lg:mr-4 mr-2">{description}</h2>
+                    <h2 className="lg:text-xl lg:w-7/12  lg:mr-4 mr-2">
+                      {description}
+                    </h2>
                   </div>
                 </div>
               </div>
