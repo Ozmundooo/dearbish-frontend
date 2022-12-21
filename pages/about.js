@@ -9,14 +9,12 @@ const about = ({}) => {
         <header className="lg:hidden">
           <Header />
         </header>
-        <div className="lg:w-3/4 flex flex-col justify-center text-white font-['Poppins'] text-center place-items-center">
+        <div className="lg:w-3/4 flex flex-col justify-center text-white font-['Poppins'] place-items-center">
           <Image
             className="lg:w-[400px] lg:h-[400px] w-[200px] h-[200px] my-5"
             src={Bish}
           />
-          <h2 className="font-bold lg:text-2xl text-lg lg:mb-5 mb-2">
-            About Bish
-          </h2>
+
           <div className="flex flex-col justify-evenly">
             <h2 className="lg:text-xl my-1 lg:mx-44">
               {`Bish Uprety is a creative director and photographer based in Toronto. Being an immigrant and having a different perspective on the everyday, he has cultivated his own sense of style through his art. Bish has always had a keen sense for authenticity and makes his subjects feel comfortable enough to be themselves in front of the camera. Bish has also delved into deeper and more introspective topics through his personal work. He’s not afraid to share his emotions to the world.`}

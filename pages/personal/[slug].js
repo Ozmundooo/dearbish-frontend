@@ -19,10 +19,6 @@ export default function personal({ title, mainImage, images, description }) {
                   {title}
                 </h2>
                 <div className="lg:flex lg:gap-12 md:gap-10 gap-6  ">
-                  <img
-                    className="lg:h-[400px] h-[300px] lg:w-full w-auto"
-                    src={urlFor(mainImage)}
-                  />
                   <div className="flex flex-col flex-grow justify-end">
                     <h2 className="lg:text-xl  lg:mr-4 mr-2">{description}</h2>
                   </div>

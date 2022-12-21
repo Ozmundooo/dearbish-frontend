@@ -16,12 +16,7 @@ export default function cd({ title, mainImage, images, description }) {
                 <h2 className="font-bold lg:text-2xl text-lg lg:mb-5 mb-2">
                   {title}
                 </h2>
-                <div className="flex lg:gap-12 md:gap-10 gap-6 ">
-                  <img
-                    className="lg:h-[400px] h-[300px] w-full md:w-auto"
-                    src={urlFor(mainImage)}
-                  />
-                </div>
+
                 <div className="flex flex-col justify-evenly">
                   <h2 className="lg:text-xl my-1 lg:mr-4 mr-2">
                     {description}

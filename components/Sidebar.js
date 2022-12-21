@@ -15,7 +15,7 @@ function Sidebar() {
           Videos
         </Link>
         <Link href="/cd" className="font-['Poppins'] font-bold text-lg">
-          Creative Diredction
+          Creative Direction
         </Link>
         {/* <Link href="/cv" className="font-['Poppins'] font-bold text-lg">
           CV
