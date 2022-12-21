@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { useState } from "react";
+import Footer from "../../components/Footer";
 
 export default function cd({ title, mainImage, images, description }) {
   return (
@@ -33,6 +34,7 @@ export default function cd({ title, mainImage, images, description }) {
               </div>
             ))}
           </div>
+          <Footer />
         </div>
 
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">

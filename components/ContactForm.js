@@ -13,7 +13,7 @@ export default function ContactForm() {
         </h2>
         <label className="font-['Poppins'] lg:text-lg">Name:</label>
         <input
-          className=" font-['Poppins'] border border-white p-1.5"
+          className=" font-['Poppins'] border border-white p-1.5 text-black"
           type="text"
           name="name"
           required
@@ -21,7 +21,7 @@ export default function ContactForm() {
         <br></br>
         <label className="font-['Poppins'] lg:text-lg ">Email:</label>
         <input
-          className=" font-['Poppins'] border border-white p-1.5"
+          className=" font-['Poppins'] border border-white p-1.5 text-black"
           type="email mx-auto"
           name="email"
           required
@@ -31,7 +31,7 @@ export default function ContactForm() {
         <textarea
           name="message"
           arows="5"
-          className=" font-['Poppins'] border border-white p-1.5"
+          className=" font-['Poppins'] border border-white p-1.5 text-black"
         />
         <br></br>
         <button

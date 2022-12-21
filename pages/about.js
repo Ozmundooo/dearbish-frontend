@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Bish from "../assets/bish.jpg";
 import Image from "next/image";
+import Footer from "../components/Footer";
 const about = ({}) => {
   return (
     <>
@@ -16,11 +17,14 @@ const about = ({}) => {
           />
 
           <div className="flex flex-col justify-evenly">
-            <h2 className="lg:text-xl my-1 lg:mx-44">
+            <h2 className="lg:text-xl my-1 lg:mx-44 mx-6">
               {`Bish Uprety is a creative director and photographer based in Toronto. Being an immigrant and having a different perspective on the everyday, he has cultivated his own sense of style through his art. Bish has always had a keen sense for authenticity and makes his subjects feel comfortable enough to be themselves in front of the camera. Bish has also delved into deeper and more introspective topics through his personal work. He’s not afraid to share his emotions to the world.`}
             </h2>
           </div>
+
+          <Footer />
         </div>
+
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
           <Header />
         </aside>

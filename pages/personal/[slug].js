@@ -3,7 +3,7 @@ import { sanityClient, urlFor } from "../../sanity";
 import { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
-
+import Footer from "../../components/Footer";
 export default function personal({ title, mainImage, images, description }) {
   return (
     <>
@@ -34,6 +34,7 @@ export default function personal({ title, mainImage, images, description }) {
               </div>
             ))}
           </div>
+          <Footer />
         </div>
 
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">

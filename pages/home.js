@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "../components/Footer";
 export default function home() {
   return (
     <>
@@ -58,7 +59,7 @@ export default function home() {
             </Link>
           </div>
         </div>
-
+        <Footer />
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
           <Header />
         </aside>

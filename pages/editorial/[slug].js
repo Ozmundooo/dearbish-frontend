@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-
+import Footer from "../../components/Footer";
 export default function Editorial({ title, images }) {
   const arrImages = [];
   for (var i = 0; i < images.length; i++) {
@@ -61,6 +61,7 @@ export default function Editorial({ title, images }) {
               ))}
             </div>
           </div>
+          <Footer />
         </div>
         {isOpen && (
           <Lightbox

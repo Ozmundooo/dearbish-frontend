@@ -3,6 +3,9 @@ import Logo from "../assets/LogoDB.png";
 import Image from "next/image";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
+import IG from "../assets/ig.png";
+import Email from "../assets/email.png";
+
 export default function Header() {
   /*
   TODO:
@@ -43,6 +46,10 @@ export default function Header() {
           <Link href="/contact">
             <h2>Contact</h2>
           </Link>
+          <div className="lg:flex place-content-end gap-5">
+            <Image className="lg:w-[30px] lg:h-[30px]" src={IG} />
+            <Image className="lg:w-[30px] lg:h-[30px]" src={Email} />
+          </div>
         </div>
       </div>
     </>

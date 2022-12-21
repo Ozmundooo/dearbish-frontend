@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import Image from "next/image";
+import Footer from "../components/Footer";
 const personal = ({ cds }) => {
   return (
     <>
@@ -38,6 +39,7 @@ const personal = ({ cds }) => {
               ))}
             </div>
           </div>
+          <Footer />
         </div>
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
           <Header />

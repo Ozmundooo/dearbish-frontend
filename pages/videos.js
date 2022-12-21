@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import Image from "next/image";
+import Footer from "../components/Footer";
 const video = ({ videos }) => {
   return (
     <>
@@ -12,18 +13,17 @@ const video = ({ videos }) => {
         </header>
         <div className="lg:w-3/4 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-black">
           <div className=" ">
-            <div className="my-14 grid lg:grid-cols-1 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
+            <div className="lg:my-14 md:my-7 grid lg:grid-cols-1 lg:gap-3 text-white font-['Poppins']  mx-5 gap-5 ">
               {videos.map((video) => (
                 <>
-                  <div className="flex flex-col lg:flex-row mt-8">
+                  <div className="flex flex-col lg:flex-row lg:mt-8">
                     <iframe
-                      width="540"
-                      height="300"
                       src={video.video}
                       title="YouTube video player"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      className="h-[220px] w-[345px] lg:w-[540px] lg:h-[300px]"
                     ></iframe>
 
                     <div className="w-full md:w-2/3 md:pl-4 flex flex-col flex-grow  md:mt-0">
@@ -37,6 +37,7 @@ const video = ({ videos }) => {
               ))}
             </div>
           </div>
+          <Footer />
         </div>
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
           <Header />
