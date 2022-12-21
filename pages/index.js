@@ -6,7 +6,7 @@ const Home = ({ personals }) => {
     <>
       <div className=" bg-black h-screen grid place-items-center relative overflow-hidden">
         <Image
-          className="h-screen w-screen animate-pulse   duration-3000"
+          className="h-screen w-screen animate-pulse   duration-[10000ms]"
           src={Bish}
         />
         <Link
