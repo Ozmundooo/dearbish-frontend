@@ -18,7 +18,7 @@ const personal = ({ cds }) => {
                   <Link key={cd.id} href={`cd/${cd.slug.current}`}>
                     <div className="flex flex-col lg:flex-row">
                       <img
-                        className="lg:h-[300px] h-[305px]"
+                        className="lg:h-[300px]"
                         src={urlFor(cd.mainImage)}
                       />
                       <div className="w-full md:w-2/3 md:pl-4 h-auto flex flex-col flex-grow mt-1 md:mt-0">
