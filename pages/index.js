@@ -14,7 +14,7 @@ const Home = ({}) => {
       </Head>
       <div className=" bg-black h-screen grid place-items-center relative overflow-hidden">
         <Image
-          className="h-screen w-screen animate-pulse   duration-[20000ms]"
+          className="h-screen w-screen animate-pulse   duration-10000"
           src={Bish}
         />
         <Link
