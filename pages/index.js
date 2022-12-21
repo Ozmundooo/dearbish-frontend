@@ -7,6 +7,10 @@ const Home = ({}) => {
     <>
       <Head>
         <title>Dearbish</title>
+        <meta
+          name="description"
+          content="Bish Uprety is a creative director and photographer based in Toronto. Being an immigrant and having a different perspective on the everyday, he has cultivated his own sense of style through his art. Bish has always had a keen sense for authenticity and makes his subjects feel comfortable enough to be themselves in front of the camera. Bish has also delved into deeper and more introspective topics through his personal work. He’s not afraid to share his emotions to the world."
+        />
       </Head>
       <div className=" bg-black h-screen grid place-items-center relative overflow-hidden">
         <Image
