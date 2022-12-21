@@ -8,8 +8,8 @@ function Sidebar() {
         <Link href="/personal" className="font-['Poppins'] font-bold text-lg">
           Personal
         </Link>
-        <Link href="/editorials" className="font-['Poppins'] font-bold text-lg">
-          Editorials
+        <Link href="/editorial" className="font-['Poppins'] font-bold text-lg">
+          Editorial
         </Link>
         <Link href="/videos" className="font-['Poppins'] font-bold text-lg">
           Videos

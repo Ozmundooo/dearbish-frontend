@@ -27,14 +27,14 @@ export default function home() {
                 </h1>
               </div>
             </Link>
-            <Link href="/editorials">
+            <Link href="/editorial">
               <div class="relative w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] group hover:scale-110 transition ease-in-out ml-0">
                 <img
                   src="./editThumb.jpg"
                   className="h-full opacity-70 group-hover:opacity-100"
                 />
                 <h1 class="absolute text-xl font-semibold  font-['Poppins'] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 group-hover:scale-150 transition ease-in-out">
-                  Editorials
+                  Editorial
                 </h1>
               </div>
             </Link>

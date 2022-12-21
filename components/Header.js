@@ -28,8 +28,8 @@ export default function Header() {
           <Link href="/personal">
             <h2>Personal</h2>
           </Link>
-          <Link href="/editorials">
-            <h2>Editorials</h2>
+          <Link href="/editorial">
+            <h2>Editorial</h2>
           </Link>
           <Link href="/videos">
             <h2>Videos</h2>
