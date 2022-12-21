@@ -4,9 +4,13 @@ import { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 import Footer from "../../components/Footer";
+import Head from "next/head";
 export default function personal({ title, mainImage, images, description }) {
   return (
     <>
+      <Head>
+        <title>Dearbish: {title}</title>
+      </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />

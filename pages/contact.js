@@ -5,9 +5,13 @@ import { sanityClient, urlFor } from "../sanity";
 import Image from "next/image";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import Head from "next/head";
 const contact = ({}) => {
   return (
     <>
+      <Head>
+        <title>Dearbish: Creative Direction</title>
+      </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />

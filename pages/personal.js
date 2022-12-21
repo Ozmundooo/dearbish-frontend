@@ -4,9 +4,13 @@ import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import Head from "next/head";
 const personal = ({ personals }) => {
   return (
     <>
+      <Head>
+        <title>Dearbish: Personal</title>
+      </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />

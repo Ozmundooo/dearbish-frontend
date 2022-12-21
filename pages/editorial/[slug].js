@@ -5,6 +5,7 @@ import Image from "next/image";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 export default function Editorial({ title, images }) {
   const arrImages = [];
   for (var i = 0; i < images.length; i++) {
@@ -24,6 +25,9 @@ export default function Editorial({ title, images }) {
   }
   return (
     <>
+      <Head>
+        <title>Dearbish: {title}</title>
+      </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />

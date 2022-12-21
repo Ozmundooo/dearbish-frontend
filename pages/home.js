@@ -7,6 +7,9 @@ import Footer from "../components/Footer";
 export default function home() {
   return (
     <>
+      <Head>
+        <title>Dearbish</title>
+      </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
           <Header />

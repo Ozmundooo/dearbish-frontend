@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Bish from "../assets/enterBG.jpg";
 import Image from "next/image";
-const Home = ({ personals }) => {
+import Head from "next/head";
+const Home = ({}) => {
   return (
     <>
+      <Head>
+        <title>Dearbish</title>
+      </Head>
       <div className=" bg-black h-screen grid place-items-center relative overflow-hidden">
         <Image
           className="h-screen w-screen animate-pulse   duration-[10000ms]"
