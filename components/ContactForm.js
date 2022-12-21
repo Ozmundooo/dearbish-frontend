@@ -5,7 +5,7 @@ export default function ContactForm() {
     <div className="lg:justify-center lg:align-middle lg:flex ">
       <form
         className="flex flex-col p-10 align-middle lg:w-1/2 text-white "
-        action="https://formsubmit.co/info@osmanali.ca"
+        action="https://formsubmit.co/info@dearbish.com"
         method="POST"
       >
         <h2 className="lg:text-5xl text-3xl text-white text text-center mb-10 font-bold">
