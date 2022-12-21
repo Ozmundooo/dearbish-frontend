@@ -1,15 +1,19 @@
 import React from "react";
-
+//09c7994bc2115a974dd6edeba1ac47f4
 export default function ContactForm() {
   return (
     <div className="lg:justify-center lg:align-middle lg:flex ">
       <form
         className="flex flex-col p-10 align-middle lg:w-1/2 text-white "
-        action="https://formsubmit.co/09c7994bc2115a974dd6edeba1ac47f4"
+        action="https://formsubmit.co/info@dearbish.com"
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false"></input>
-        <input type="hidden" name="_next" value="/home"></input>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://dearbish.com/home"
+        ></input>
         <h2 className="lg:text-5xl text-3xl text-white text text-center mb-10 font-bold">
           Contact
         </h2>
