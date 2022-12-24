@@ -21,7 +21,7 @@ const Home = ({}) => {
           href="/home"
           className="absolute text-white group hover:scale-150 border border-white px-8 py-4 font-['Poppins'] font-semibold hover:bg-white hover:text-black duration-150"
         >
-          START
+          ENTER
         </Link>
       </div>
     </>
