@@ -23,7 +23,7 @@ export default function home() {
                   className="h-full opacity-70 group-hover:opacity-100"
                 />
                 <h1 class="absolute text-xl font-semibold  font-['Poppins'] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 group-hover:scale-150 transition ease-in-out">
-                  Personal
+                  Personal Works
                 </h1>
               </div>
             </Link>
@@ -34,7 +34,7 @@ export default function home() {
                   className="h-full opacity-70 group-hover:opacity-100"
                 />
                 <h1 class="absolute text-xl font-semibold  font-['Poppins'] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 group-hover:scale-150 transition ease-in-out">
-                  Editorial
+                  Photography
                 </h1>
               </div>
             </Link>

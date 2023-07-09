@@ -6,10 +6,13 @@ function Sidebar() {
     <>
       <Menu right>
         <Link href="/personal" className="font-['Poppins'] font-bold text-lg">
-          Personal
+          Personal Works
         </Link>
-        <Link href="/editorial" className="font-['Poppins'] font-bold text-lg">
-          Editorial
+        <Link
+          href="/photography"
+          className="font-['Poppins'] font-bold text-lg"
+        >
+          Photography
         </Link>
         <Link href="/videos" className="font-['Poppins'] font-bold text-lg">
           Videos

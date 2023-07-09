@@ -26,10 +26,10 @@ export default function Header() {
 
         <div className="lg:flex lg:flex-col xl:text-xl text-lg gap-6 font-semibold text-right lg:my-10 hidden">
           <Link href="/personal">
-            <h2>Personal</h2>
+            <h2>Personal Works</h2>
           </Link>
-          <Link href="/editorial">
-            <h2>Editorial</h2>
+          <Link href="/photography">
+            <h2>Photography</h2>
           </Link>
           <Link href="/videos">
             <h2>Videos</h2>

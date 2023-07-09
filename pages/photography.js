@@ -9,7 +9,7 @@ const personal = ({ editorials }) => {
   return (
     <>
       <Head>
-        <title>Dearbish: Editorial</title>
+        <title>Dearbish: Photography</title>
       </Head>
       <div className="h-screen w-screen lg:flex lg:flex-row flex flex-col bg-black overflow-x-hidden">
         <header className="lg:hidden">
@@ -22,7 +22,7 @@ const personal = ({ editorials }) => {
                 <>
                   <Link
                     key={editorial.id}
-                    href={`editorial/${editorial.slug.current}`}
+                    href={`photography/${editorial.slug.current}`}
                   >
                     <h2 className="font-bold lg:text-lg text-md lg:mb-5 mb-2 lg:mt-2">
                       {editorial.title}
