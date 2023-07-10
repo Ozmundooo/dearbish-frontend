@@ -27,7 +27,7 @@ export default function home() {
                 </h1>
               </div>
             </Link>
-            <Link href="/editorial">
+            <Link href="/photography">
               <div class="relative w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] group hover:scale-110 transition ease-in-out ml-0">
                 <img
                   src="./editThumb.jpg"
