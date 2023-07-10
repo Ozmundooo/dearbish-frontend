@@ -31,6 +31,8 @@ const personal = ({ editorials }) => {
                       <img
                         className="lg:h-[500px] lg:object-cover"
                         src={urlFor(editorial.mainImage)}
+                        layout="responsive"
+                        loading="lazy"
                       />
                     </div>
                   </Link>
