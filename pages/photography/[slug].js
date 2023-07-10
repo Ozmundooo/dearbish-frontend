@@ -46,7 +46,7 @@ export default function Editorial({ title, images }) {
           <div className="mx-10 flex flex-col gap-8 xl:hidden">
             {arrImages.map((image, i) => (
               <div key={i}>
-                <img src={image}></img>
+                <img src={image} layout="responsive" loading="lazy"></img>
               </div>
             ))}
           </div>
@@ -58,6 +58,8 @@ export default function Editorial({ title, images }) {
                     <img
                       className="h-[400px] mx-auto cursor"
                       src={image}
+                      layout="responsive"
+                      loading="lazy"
                       onClick={() => imageSelect(i)}
                     />
                   </div>
