@@ -22,7 +22,7 @@ export default function home() {
                   src="./persThumb.jpg"
                   className="h-full opacity-70 group-hover:opacity-100"
                 />
-                <h1 class="absolute text-xl font-semibold  font-['Poppins'] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 group-hover:scale-150 transition ease-in-out">
+                <h1 class="absolute text-xl font-semibold text-center  font-['Poppins'] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 group-hover:scale-150 transition ease-in-out">
                   Personal Works
                 </h1>
               </div>
