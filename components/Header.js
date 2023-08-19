@@ -20,7 +20,7 @@ export default function Header() {
       </div>
 
       <div className="lg:px-32 lg:py-12 p-4 py-6 lg:flex-col lg:flex bg-black text-white  lg:h-screen font-['Poppins'] lg:sticky lg:right-0">
-        <Link href="/home">
+        <Link href="/">
           <Image className=" lg:my-8 w-[125px]  xl:w-full  " src={Logo} />
         </Link>
 
