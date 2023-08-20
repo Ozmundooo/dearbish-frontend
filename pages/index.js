@@ -6,6 +6,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import { sanityClient, urlFor } from "../sanity";
 export default function home({ title, mainImage, slug }) {
+  /* Problme with vercel  - Aug 20 */
   return (
     <>
       <Head>
