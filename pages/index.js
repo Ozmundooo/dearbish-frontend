@@ -22,6 +22,7 @@ export default function home({ title, mainImage, slug }) {
             <div className="mx-4">
               <Link href={`photography/${slug.current}`}>
                 <img
+                  alt={title}
                   className="h-[75vh] lg:h-[85vh] object-cover m-auto "
                   src={urlFor(mainImage)}
                 ></img>
