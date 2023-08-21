@@ -32,7 +32,7 @@ export default function home({ title, mainImage, slug }) {
         </section>
 
         <Footer />
-        <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
+        <aside className="lg:w-1/4 lg:h-screen lg:sticky top-0 hidden lg:flex">
           <Header />
         </aside>
       </div>
