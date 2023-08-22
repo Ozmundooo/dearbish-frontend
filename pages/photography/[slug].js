@@ -2,8 +2,7 @@ import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+
 import Footer from "../../components/Footer";
 import Head from "next/head";
 export default function Editorial({ title, images }) {
@@ -69,13 +68,13 @@ export default function Editorial({ title, images }) {
           </div>
           <Footer />
         </div>
-        {isOpen && (
+        {/* {isOpen && (
           <Lightbox
             key={key}
             mainSrc={urlFor(images[photoIndex])}
             onCloseRequest={() => setIsOpen(0)}
           />
-        )}
+        )} */}
         <aside className="lg:w-1/4 lg:h-screen sticky top-0 hidden lg:flex">
           <Header />
         </aside>
