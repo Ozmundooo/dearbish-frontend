@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { useState } from "react";
 
+//
 import Footer from "../../components/Footer";
 import Head from "next/head";
 export default function personal({ title, mainImage, images, description }) {
